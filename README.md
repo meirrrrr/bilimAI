@@ -1,53 +1,69 @@
-# BilimAI
+# Bilim AI
 
-BilimAI is an innovative platform designed to democratize access to artificial intelligence by providing a user-friendly interface for building, training, and deploying machine learning models. Whether you're a beginner or an experienced data scientist, BilimAI simplifies the process of creating AI solutions with intuitive tools and comprehensive documentation.
+Bilim AI is an innovative educational application designed to help schoolchildren enhance their math skills using Artificial Intelligence. Built with Next.js, Node.js, Python, FastAPI, and MongoDB, this application provides personalized learning experiences for students, enabling them to improve their understanding of mathematical concepts and excel in their studies.
 
 ## Features
 
-- **No-Code Interface**: Build and train models without writing code, perfect for beginners.
-- **Advanced Customization**: Experienced users can leverage scripting and advanced configurations for complex projects.
-- **Pre-trained Models**: Access a library of pre-trained models for quick deployment in various applications.
-- **Scalable Deployment**: Deploy models seamlessly on cloud or edge devices with built-in optimization tools.
-- **Community Support**: Join a growing community of AI enthusiasts, share projects, and collaborate on innovative solutions.
+- **AI-Powered Learning**: Bilim AI uses artificial intelligence to offer personalized math exercises and feedback, guiding students through complex problems.
+- **Math Skills Enhancement**: The platform is designed to help students strengthen their math skills through tailored practice sessions and difficulty adjustments.
+- **Real-time Feedback**: Students receive instant feedback on their solutions, allowing them to learn from their mistakes and improve their problem-solving abilities.
+- **User-Friendly Interface**: The platform is built with a modern, responsive interface, ensuring ease of use for students and teachers alike.
+- **Progress Tracking**: Bilim AI tracks student progress and provides insights into areas that need improvement, offering targeted exercises to help them grow.
 
-## Getting Started
+## Tech Stack
 
-1. **Clone the Repository**:
+- **Frontend**: Next.js, React
+- **Backend**: Node.js, FastAPI
+- **Database**: MongoDB
+- **AI Integration**: Python for AI model handling
+- **Authentication**: JWT (JSON Web Token) for secure login and session management
+
+## Installation
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- Node.js (v16 or later)
+- Python (v3.8 or later)
+- MongoDB (local or remote instance)
+
+### Setup
+
+1. Clone the repository:
+
    ```bash
    git clone https://github.com/meirrrrr/bilimAI.git
-   ```
-2. **Install Dependencies**:
-   ```bash
    cd bilimAI
+   ```
+2. Frontend setup:
+
+   ```bash
+   cd frontend
+   npm install
+   ```
+3. Backend setup:
+   Navigate to the backend directory and install the required dependencies:
+   ```bash
+   cd backend
    pip install -r requirements.txt
    ```
-3. **Run the Application**:
-   ```bash
-   python app.py
+
+4. MongoDB Setup:
+   Make sure MongoDB is running locally or set up a cloud MongoDB instance (e.g., MongoDB Atlas) and update the connection string in the backend/config.py.
+
+5. Run the Application:
+   Frontend:
    ```
-4. **Access the Platform**: Open your browser and navigate to `http://localhost:5000`.
+   npm run dev
+   ```
+   Backend
+   ```
+   npm run dev
+   ```
+   Python backend
+   ```
+   python main.py
+   ```
 
-## Requirements
-
-- Python 3.8+
-- Flask
-- TensorFlow or PyTorch (depending on model requirements)
-- Other dependencies listed in `requirements.txt`
-
-## Contributing
-
-We welcome contributions from the community! To contribute:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a Pull Request.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Contact
-
-For questions or support, reach out to the maintainer at [meirrrrr@example.com](mailto:meirrrrr@example.com) or join our [community forum](https://github.com/meirrrrr/bilimAI/discussions).
+You can copy this content directly into your `README.md` file. Let me know if you need any adjustments
